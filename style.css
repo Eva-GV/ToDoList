@@ -119,42 +119,6 @@ img{
 .tachado{
     text-decoration: line-through;
 }
-/* logo Eva */
-.logo{
-    display: flex;
-}
-.burguer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 32px;
-    height: 33px;
-    /* padding: 2px;
-    margin-left: 5px;
-    margin-top: 5px; */
-}
-.largo {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-}
-.corto{
-    width: 50%;
-    height: 3px;
-    background-color: white;
-}
-.log {
-    font-size: 19px;
-    color: black;
-    font-family: 'Black Ops One', cursive;
-    margin-left: 3px;
-    background-color: white;
-    padding: 2px;
-    margin-top: 14px;
-}
-.logo{
-    padding: 3px;
-}
 
 
 /*  RESPONSIVE
