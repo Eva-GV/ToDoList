@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	/*cuenta los bordes como parte del elemento que lo contiene*/
+	font-family: 'Courier Prime';	
+}
+body{
+    background-image: url('imagenes/galaxia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+input{
+    width: 100%;
+    padding: 20px;    
+    border-radius: 25px;
+    border-color: transparent;
+    background-color: #f4f0f5;
+    letter-spacing: 6px;
+    font-size: 22px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+.wrapper{
+    flex-direction: column; 
+    /* width: fit-content; */
+}
+.flex{
+
+	display: flex;
+}
+.tareas{
+    flex-direction: column;
+    /* background-color: #eae1eb; */
+    width: 50%;
+    margin: auto;
+    margin-bottom: 600px;
+    margin-top: 75px;    
+}
+.contenedorInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    padding: 18px;
+    background-color: #181718d2;
+}
+.tituloTarea{
+    padding: 26px;
+    background-color: #111011af;
+    color:white;
+    letter-spacing: 10PX;
+}
+#anadir{
+    width: 60px;
+    height: 50px;
+    background-color: rgb(172, 27, 193);
+    margin-right: 20px;
+    border-radius: 61px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.iconos{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+.tarea{
+    width: 100%;
+    align-items: center;
+    margin-left: 20px;
+    padding: 17px;
+    justify-content: center;
+    animation-name: aparece;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    word-break: break-all;
+    
+}
+@keyframes aparece {
+    from {width:50%}
+    to {width: 100%;}
+}
+#grid_tareasHacer{
+    flex-direction: column;
+}
+.nuevaTarea{
+    background-color: #ffffff42;
+}
+.nuevaTarea:not(:last-child){
+    border-bottom: 2px solid #52505c4d;
+}
+.titulaco{
+    text-align: center;
+    margin: auto;
+    letter-spacing: 10PX;  
+}
+.campana{
+    font-size: 50px;
+    MARGIN-TOP: 60PX;
+    font-weight: bold;
+}
+.tarea p{
+    letter-spacing: 6px;
+}
+.icono:hover{
+    filter: drop-shadow(2px 4px 4px black); 
+}
+.tachado{
+    text-decoration: line-through;
+}
+/* logo Eva */
+.logo{
+    display: flex;
+}
+.burguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 33px;
+    /* padding: 2px;
+    margin-left: 5px;
+    margin-top: 5px; */
+}
+.largo {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.corto{
+    width: 50%;
+    height: 3px;
+    background-color: white;
+}
+.log {
+    font-size: 19px;
+    color: black;
+    font-family: 'Black Ops One', cursive;
+    margin-left: 3px;
+    background-color: white;
+    padding: 2px;
+    margin-top: 14px;
+}
+.logo{
+    padding: 3px;
+}
+
+
+/*  RESPONSIVE
+   ========================================================================= 
+   /* Tablets en horizonal y escritorios normales
+      ------------------------------------------------------------------------- */
+   @media (min-width: 768px) and (max-width: 1199px) { 
+
+        .tareas{
+            width: 60%;
+        }
+    }   
+   /* Móviles en horizontal o tablets en vertical
+      ------------------------------------------------------------------------- */
+   @media (max-width: 767px) { 
+
+    .tareas{
+        width: 70%;
+        }
+    }
+    
+   /* Móviles en vertical
+      ------------------------------------------------------------------------- */
+   @media (max-width: 480px) {
+    .tareas{
+        width: 80%;
+        }
+     .wrapper{
+         width: fit-content;
+     }   
+     .campana{
+        font-size: 35px;
+        margin-top: 26PX;
+     }
+     input{
+        font-size: 18px;
+     }
+   }
